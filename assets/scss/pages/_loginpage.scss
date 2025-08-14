@@ -1,0 +1,45 @@
+.loginpage-img {
+    max-width: 526px;
+    height: 589px;
+    background-image: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginpage-bg-img {
+    max-width: 746px;
+    height: 589px;
+    background-image: url(../images/login-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-icon-bg {
+    width: 586px;
+    background-color: $neutral-white;
+}
+
+@media(max-width: 1200px) {
+    .login-icon-bg {
+        width: 351px;
+    }
+}
+
+@media(max-width: 576px) {
+    .loginpage-sm-img {
+        max-width: 576px;
+        height: 30vh;
+        background-image: url(../images/login-sm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .loginpage-bg-img {
+        max-width: unset;
+        height: unset;
+        background-image: unset;
+    }
+}

@@ -1,0 +1,338 @@
+// 容器 & flex
+.container {
+    max-width: 1320px; // 1920px - 格線所佔寬度 = 1296 + 左右 pd = 1320
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -12px; // 將 col 最外層的 padding 推回
+}
+
+.col-3 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 3);
+}
+
+.col-5 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 8);
+}
+
+.col-10 {
+    padding: 0px 12px;
+    width: calc(100% / 12 * 10);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .row {
+        margin: 0px -6px;
+    }
+
+    .col-md-2 {
+        padding-right: 6px;
+        padding-left: 6px;
+        width: calc(100% / 4 * 2);
+    }
+
+    .col-md-4 {
+        padding-right: 6px;
+        padding-left: 6px;
+        width: 100%;
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+
+    .flex-mb-column {
+        flex-direction: column;
+    }
+
+    .flex-md-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .d-md-none {
+        display: none;
+    }
+
+    // 滾動條
+    .overflow-x-md-auto {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+}
+
+// 文字顏色
+.text-primary-300 {
+    color: $primary-300;
+}
+
+.text-primary-400 {
+    color: $primary-400;
+}
+
+.text-white {
+    color: $neutral-white;
+}
+
+.text-neutral-300 {
+    color: $neutral-300;
+}
+
+.text-neutral-500 {
+    color: $neutral-500;
+}
+
+.text-neutral-600 {
+    color: $neutral-600;
+}
+
+// 背景色
+.bg-primary-100 {
+    background-color: $primary-100;
+}
+
+.bg-primary-200 {
+    background-color: $primary-200;
+}
+
+// 連結
+.link {
+    &-primary {
+    color: $neutral-900;        
+    }
+
+    &-primary:hover {
+    color: $primary-500;        
+    }
+
+    &-neutral {
+    color: $neutral-900;
+  }
+
+    &-neutral:hover {
+  color: $neutral-600;
+    }
+}
+
+// 文字樣式
+.h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-lg {
+    font-size: 20px;
+}
+
+.text-md {
+  font-weight: 500;
+}
+
+.text-sm {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.display-1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.display-2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+    .h2-md {
+        font-size: 32px;
+    }
+
+    .h3-md {
+        font-size: 28px;
+    }
+
+    .h4-md {
+        font-size: 24px;
+    }
+
+    .h5-md {
+        font-size: 20px;
+    }
+
+    .h6-md {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .text-md-md {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .display-md-2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    }
+}
+
+@media (max-width: 576px) {
+    .h3-sm {
+        font-size: 28px;
+    }
+
+    .h4-sm {
+        font-size: 24px;
+    }
+
+    .h5-sm {
+        font-size: 20px;
+    }
+
+    .h6-sm {
+        font-size: 16px;
+    }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+    .text-align-md-left {
+        text-align: left;
+    }
+}
+
+// 圓角
+.border-radius-4 {
+  border-radius: 4px;
+}
+
+.border-radius-12 {
+  border-radius: 12px;
+}
+
+// 框線
+.border-bottom-1 {
+  border-bottom: 1px solid $neutral-300;
+}
+
+.border-bottom-2-dark {
+  border-bottom: 2px solid $neutral-900;
+}
+
+.border-bottom-2-light {
+  border-bottom: 2px solid $neutral-300;
+}
+
+.border-right {
+  border-right: 1px solid $neutral-900;
+}
+
+.border-left {
+    border-left: 3px solid $neutral-300;
+}
+
+@media (max-width: 768px) {
+    .border-md-1 {
+        border: 1px solid $neutral-300;
+    }
+}

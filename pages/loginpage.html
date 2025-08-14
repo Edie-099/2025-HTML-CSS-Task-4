@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBMSTEP</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <section>
+            <div class="loginpage-sm-img d-sm-block"></div>
+            <div class="container py-64 py-md-32">
+                <div class="row">
+                    <div class="col-5 col-md-4 d-sm-none">
+                        <div class="loginpage-img border-radius-12"></div>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <div class="loginpage-bg-img border-radius-12">
+                            <div class=" text-align-center py-120 py-sm-0">
+                                <p class="h3 h4-md mb-32 mb-md-24">歡迎</p>
+                                <ul class="h6 d-flex justify-content-center align-items-center mb-32 mb-md-24">
+                                    <li class="px-130 px-lg-70 border-bottom-2-dark"><a class="py-12" href="#">登入</a></li>
+                                    <li class="px-130 px-lg-70 border-bottom-2-light"><a class="py-12 text-neutral-300"
+                                            href="#">註冊</a></li>
+                                </ul>
+                                <ul class="d-flex flex-wrap justify-content-center">
+                                    <li class="d-flex justify-content-start border-radius-4 login-icon-bg border-md-1 mb-8">
+                                        <a href="#">
+                                            <img class="p-12" src="../assets/images/facebook.svg" alt="Facebook">
+                                            <span class="text-md">Facebook 登入</span>
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-start border-radius-12 login-icon-bg border-md-1 mb-8">
+                                        <a href="#">
+                                            <img class="p-12" src="../assets/images/apple.svg" alt="Apple">
+                                            <span class="text-md">Apple 登入</span>
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-start border-radius-12 login-icon-bg border-md-1">
+                                        <a href="#">
+                                            <img class="p-12" src="../assets/images/google.svg" alt="Google">
+                                            <span class="text-md">Google 登入</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

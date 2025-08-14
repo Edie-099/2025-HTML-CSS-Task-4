@@ -1,0 +1,33 @@
+.btn {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+.btn-dark {
+  background-color: $neutral-900;
+  color: $neutral-white;
+}
+
+.btn-dark:hover {
+  background-color: $neutral-700;
+}
+
+.btn-primary-300 {
+  background-color: $primary-300;
+}
+
+.btn-primary-300:hover {
+  color: $primary-500;
+}
+
+@media (max-width: 576px) {
+  .btn-sm {
+    padding: 8px 16px;
+  }
+}
